@@ -12,6 +12,7 @@ npx degit n2geoff/vite-riot-template my-project
 cd my-project
 npm install
 npm run dev
+```
 
 ## NPM Scripts
 
