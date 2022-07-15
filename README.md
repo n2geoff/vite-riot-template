@@ -24,6 +24,16 @@ npm run dev
 
 `npm run preview --host` - You should then be able to see your files locally at port 5000
 
+
+## Checklist
+
+When you use this template, you should update with your info
+
+- [ ] Change the author name in `LICENSE`
+- [ ] Change the favicon in `public`
+- [ ] Clean up the README
+
+
 ## License
 
 This project is open source and available under the [MIT License](https://github.com/n2geoff/vite-riot-template/blob/main/LICENSE).
