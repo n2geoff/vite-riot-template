@@ -10,7 +10,7 @@
     "riot": "^6.1.2"
   },
   "devDependencies": {
-    "vite": "^2.9.13",
-    "rollup-plugin-riot": "^6.0.0"
+    "rollup-plugin-riot": "^6.0.0",
+    "vite": "^3.0.0"
   }
 }
