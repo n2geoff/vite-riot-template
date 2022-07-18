@@ -27,7 +27,7 @@ npm run dev
 
 ## Checklist
 
-When you use this template, you should update with your info
+When you use this template, you should update the following with your information
 
 - [ ] Change the author name in `LICENSE`
 - [ ] Change the favicon in `public`
@@ -36,4 +36,4 @@ When you use this template, you should update with your info
 
 ## License
 
-This project is open source and available under the [MIT License](https://github.com/n2geoff/vite-riot-template/blob/main/LICENSE).
+- [MIT License](https://github.com/n2geoff/vite-riot-template/blob/main/LICENSE).
