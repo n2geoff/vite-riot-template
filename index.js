@@ -1,5 +1,4 @@
-import * as riot from 'riot';
-import app from "./app.riot";
+import Registery from './pages/registery.js';
 
-riot.register('app', app);
-riot.mount('app', {message: 'Hello Riot'});
+// globally register all pages
+Registery();

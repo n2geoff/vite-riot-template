@@ -1,0 +1,25 @@
+body {
+  font-size: 1.2em;
+  margin:0;
+  padding:0;
+  color: #FFF;
+  background: #222;
+  
+}
+
+a {color: #ED1}
+
+code {color: gray;}
+
+.links {
+    display: flex; 
+    justify-content: space-evenly; 
+    text-align: center;
+}
+
+.splash {
+    font-size: larger;
+    text-align: center;
+    margin: 8vh auto;
+    width: 620px;
+}
