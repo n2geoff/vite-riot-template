@@ -2,6 +2,7 @@
 
 Use [Vite](https://vitejs.dev/) Starter Template to scaffold a new [Riot](https://riot.js.org/) project.
 
+
 ## Getting Started
 
 Pull the template files with [degit](https://github.com/Rich-Harris/degit) and install dependencies
@@ -13,6 +14,41 @@ cd my-project
 npm install
 npm run dev
 ```
+
+### Mounting Strategy
+
+This template uses a **pages** static registry based approach that auto-mounts global *page components* that then can dynaimicly mount other *components* needed build your up your content via the `components` export default property.
+
+> SEE: /pages/registry.js for more information
+
+#### Components Example
+
+```
+<my-page>
+    <div>
+        <example-component></example-component>
+    </div>
+
+    <script>
+        import Example from './example-component/example-component.riot';
+
+        export default {
+            components: {
+                Example
+            }
+        }
+    </script>
+</my-page>
+```
+
+> recommend a dedicated `/components` directory 
+
+### Testing
+
+- TODO
+
+> SEE: `pages/hello-riot/hello-riot.spec.js` (unwired)
+
 
 ## NPM Scripts
 
@@ -32,6 +68,11 @@ When you use this template, you should update the following with your informatio
 - [ ] Change the author name in `LICENSE`
 - [ ] Change the favicon in `public`
 - [ ] Clean up the README
+
+
+## TODO
+
+- Add Testing Example w/ Chai & Mocha
 
 
 ## License
