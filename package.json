@@ -1,5 +1,5 @@
 {
-  "name": "riot-app",
+  "name": "vite-riot-template",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
