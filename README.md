@@ -47,7 +47,7 @@ README.md
 
 This template uses a **pages** static registry based approach that auto-mounts global *page components* that then can dynaimicly mount other *components* needed build your up your content via the `components` export default property.
 
-> SEE: /pages/registry.js for more information
+> SEE: `/src/js/registry.js` for more information
 
 #### Components Example
 
@@ -75,7 +75,7 @@ This template uses a **pages** static registry based approach that auto-mounts g
 
 - TODO
 
-> SEE: `pages/hello-riot/hello-riot.spec.js` (unwired)
+> SEE: `src/pages/hello-riot/hello-riot.spec.js` (unwired)
 
 
 ## NPM Scripts
