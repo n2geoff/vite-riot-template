@@ -1,4 +1,4 @@
-import Registery from './pages/registery.js';
+import Registery from './js/registery.js';
 
 // globally register all pages
 Registery();

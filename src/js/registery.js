@@ -1,5 +1,5 @@
 import {register, mount} from 'riot';
-import HelloRiot from './hello-riot/hello-riot.riot';
+import HelloRiot from '../pages/hello-riot/hello-riot.riot';
 
 /*
     Add Global Pages to registry
