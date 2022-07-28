@@ -15,6 +15,34 @@ npm install
 npm run dev
 ```
 
+### Checklist
+
+When you use this template, you should update the following with your information
+
+- [ ] Update `package.json` information
+- [ ] Change the author name in `LICENSE`
+- [ ] Change the favicon in `public`
+- [ ] Clean up the README
+
+### Project Structure
+
+```
+dist/                               <-- `npm run build` app
+src/                                <-- your source code
+    css/                            <-- processed css files
+    js/                             <-- processed javascript files
+    public/                         <-- unprocessed static `/` assets
+    pages/                          <-- page components
+        hello-riot/
+            hello-riot.riot         <-- riot component
+            hello-riot.spec.js      <-- component test
+    index.js                        <-- application bootstrap
+index.html                          <-- START HERE
+vite.config.js                      <-- build configuration
+README.md
+...                                 <-- misc project meta files
+```
+
 ### Mounting Strategy
 
 This template uses a **pages** static registry based approach that auto-mounts global *page components* that then can dynaimicly mount other *components* needed build your up your content via the `components` export default property.
@@ -59,16 +87,6 @@ This template uses a **pages** static registry based approach that auto-mounts g
 > Note that if after this last command you do not see anything, you can use instead this other command:
 
 `npm run preview --host` - You should then be able to see your files locally at port 5000
-
-
-## Checklist
-
-When you use this template, you should update the following with your information
-
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the favicon in `public`
-- [ ] Clean up the README
-
 
 ## TODO
 
