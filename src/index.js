@@ -1,4 +1,10 @@
-import Registery from './js/registery.js';
+import {Register} from './js/register.js';
+import HelloRiot from './components/hello-riot/hello-riot.riot';
 
-// globally register all pages
-Registery();
+// define global components here
+const registry = {
+    'hello-riot': HelloRiot
+};
+
+// register global components 
+Register(registry);
