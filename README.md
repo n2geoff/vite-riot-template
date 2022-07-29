@@ -45,9 +45,9 @@ README.md
 
 ### Mounting Strategy
 
-This template uses a static registry to mount global **components** which in-turn can mount other nested components via `components` export option.
+This template uses a static object registry to mount global **components** which in-turn can mount other nested components via `components` export option.
 
-#### Components Example
+#### Example
 
 ```
 // my-page.riot
@@ -68,7 +68,7 @@ This template uses a static registry to mount global **components** which in-tur
 </my-page>
 ```
 
-> SEE: `/src/js/registry.js` for more information
+> SEE: `/src/index.js` for more information
 
 
 ### Tests
