@@ -45,9 +45,7 @@ README.md
 
 ### Mounting Strategy
 
-This template uses a **pages** static registry based approach that auto-mounts global *page components* that then can dynaimicly mount other *components* needed build your up your content via the `components` export default property.
-
-> SEE: `/src/js/registry.js` for more information
+This template uses a static component mounting registry to mount global **pages** (components) which in-turn mounts content specific components to flesh out your pages using `components` export option.
 
 #### Components Example
 
@@ -69,28 +67,27 @@ This template uses a **pages** static registry based approach that auto-mounts g
 </my-page>
 ```
 
-> recommend a dedicated `/components` directory 
+> SEE: `/src/js/registry.js` for more information
 
-### Testing
 
-- TODO
+### Tests
 
-> SEE: `src/pages/hello-riot/hello-riot.spec.js` (unwired)
+In a folder-per-component setup, you can place your `*.spec.js` files right next to your web components for easy isolated testing
+
+*bring your own testing solution*
+
+> CHAI/MOCHA EXAMPLE: `src/pages/hello-riot/hello-riot.spec.js` (unwired)
 
 
 ## NPM Scripts
 
-- npm run dev - Starts the development server at port 3000
-- npm run build - Builds the application in a dist folder
-- npm run preview - Serves the build files (dist folder) locally at port 5000
+- `npm run dev` - Starts the development server at port 3000
+- `npm run build` - Builds the application in a dist folder
+- `npm run preview` - Serves the build files (dist folder) locally at port 5000
 
 > Note that if after this last command you do not see anything, you can use instead this other command:
 
 `npm run preview --host` - You should then be able to see your files locally at port 5000
-
-## TODO
-
-- Add Testing Example w/ Chai & Mocha
 
 
 ## License
