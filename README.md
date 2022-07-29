@@ -32,10 +32,10 @@ src/                                <-- your source code
     css/                            <-- processed css files
     js/                             <-- processed javascript files
     public/                         <-- unprocessed static `/` assets
-    pages/                          <-- page components
+    components/                     <-- riots components
         hello-riot/
             hello-riot.riot         <-- riot component
-            hello-riot.spec.js      <-- component test
+            hello-riot.spec.js      <-- component tests
     index.js                        <-- application bootstrap
 index.html                          <-- START HERE
 vite.config.js                      <-- build configuration
@@ -45,11 +45,12 @@ README.md
 
 ### Mounting Strategy
 
-This template uses a static component mounting registry to mount global **pages** (components) which in-turn mounts content specific components to flesh out your pages using `components` export option.
+This template uses a static registry to mount global **components** which in-turn can mount other nested components via `components` export option.
 
 #### Components Example
 
 ```
+// my-page.riot
 <my-page>
     <div>
         <example-component></example-component>
@@ -76,7 +77,7 @@ In a folder-per-component setup, you can place your `*.spec.js` files right next
 
 *bring your own testing solution*
 
-> CHAI/MOCHA EXAMPLE: `src/pages/hello-riot/hello-riot.spec.js` (unwired)
+> CHAI/MOCHA EXAMPLE: `src/components/hello-riot/hello-riot.spec.js` (unwired)
 
 
 ## NPM Scripts

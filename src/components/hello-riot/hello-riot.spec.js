@@ -1,6 +1,6 @@
-import HelloRiot from './hello-riot.riot';
-import {expect} from 'chai';
 import {component} from 'riot';
+import {expect} from 'chai';
+import HelloRiot from './hello-riot.riot';
 
 describe('Hello Riot Page Unit Test', () => {
     const mount = component(HelloRiot);

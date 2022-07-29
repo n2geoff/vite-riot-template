@@ -14,7 +14,7 @@ code {
   color: gray;
 }
 
-.links {
+.flex {
     display: flex; 
     justify-content: space-evenly; 
     text-align: center;
@@ -23,6 +23,6 @@ code {
 .splash {
     font-size: larger;
     text-align: center;
-    margin: 6vh auto;
+    margin: 4vh auto;
     width: 620px;
 }
