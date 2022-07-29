@@ -4,12 +4,15 @@ body {
   padding:0;
   color: #FFF;
   background: #222;
-  
 }
 
-a {color: #ED1}
+a {
+  color: #ED1
+}
 
-code {color: gray;}
+code {
+  color: gray;
+}
 
 .links {
     display: flex; 
@@ -20,6 +23,6 @@ code {color: gray;}
 .splash {
     font-size: larger;
     text-align: center;
-    margin: 8vh auto;
+    margin: 6vh auto;
     width: 620px;
 }
