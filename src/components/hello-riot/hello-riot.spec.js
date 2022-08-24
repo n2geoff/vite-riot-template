@@ -9,9 +9,9 @@ describe('Hello Riot Page Unit Test', () => {
         const div = document.createElement('div')
 
         const component = mount(div, {
-            version: 'v6.1.2'
+            version: 'v7.x'
         });
 
-        expect(component.$('p').innerHTML).to.be.equal('v6.1.2');
+        expect(component.$('p').innerHTML).to.be.equal('v7.x');
     });
 });

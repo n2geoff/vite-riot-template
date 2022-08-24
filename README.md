@@ -73,7 +73,7 @@ This template uses a static object registry to mount global **components** which
 
 ### Tests
 
-In a folder-per-component setup, you can place your `*.spec.js` files right next to your web components for easy isolated testing
+In a folder-per-component setup, you can place your `*.spec.js` files right next to your web components for isolated testing, but this template is a...
 
 *bring your own testing solution*
 
