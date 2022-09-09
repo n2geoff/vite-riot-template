@@ -2,10 +2,10 @@ import {register, mount} from 'riot';
 
 /**
  * Register Global Components
- * 
+ *
  * helper that registers and mounts global components
  * via an object registry
- * 
+ *
  * @param {Object} registry     key:value object registry
  */
 export function Register(registry = {}) {

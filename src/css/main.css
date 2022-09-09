@@ -15,8 +15,8 @@ code {
 }
 
 .flex {
-    display: flex; 
-    justify-content: space-evenly; 
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
 }
 
