@@ -31,6 +31,7 @@ dist/                               <-- `npm run build` app
 src/                                <-- your source code
     css/                            <-- processed css files
     js/                             <-- processed javascript files
+        registry.js                 <-- global component registry
     public/                         <-- unprocessed static `/` assets
     components/                     <-- riots components
         hello-riot/
@@ -68,7 +69,7 @@ This template uses a static object registry to mount global **components** which
 </my-page>
 ```
 
-> SEE: `/src/index.js` for more information
+> SEE: `/src/index.js` & `/src/js/registry.js` for more information
 
 
 ### Tests

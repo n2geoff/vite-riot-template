@@ -1,4 +1,5 @@
 import {register, mount} from 'riot';
+import HelloRiot from '../components/hello-riot/hello-riot.riot';
 
 /**
  * Register Global Components
@@ -20,4 +21,10 @@ export function Register(registry = {}) {
     });
 }
 
-export default Register;
+// define global components here
+const registry = {
+    'hello-riot': HelloRiot
+};
+
+// export registered global components
+export default Register(registry);
