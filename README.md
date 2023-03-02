@@ -71,15 +71,6 @@ This template automaticly registers and mounts riot components. These global **c
 > SEE: `/src/app.js` for more information
 
 
-### Tests
-
-In a **folder-per-component** setup, you can place your `*.spec.js` files right next to your web components for isolated testing, but this template is a...
-
-*bring your own testing solution*
-
-> EXAMPLE: https://github.com/riot/examples/tree/gh-pages/timer
-
-
 ## NPM Scripts
 
 - `npm run dev` - Starts the development server at port 3000
