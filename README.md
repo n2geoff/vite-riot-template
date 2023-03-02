@@ -31,13 +31,12 @@ dist/                               <-- `npm run build` app
 src/                                <-- your source code
     css/                            <-- processed css files
     js/                             <-- processed javascript files
-        registry.js                 <-- global component registry
     public/                         <-- unprocessed static `/` assets
     components/                     <-- riots components
         hello-riot/
             hello-riot.riot         <-- riot component
             hello-riot.spec.js      <-- component tests
-    index.js                        <-- application bootstrap
+    app.js                          <-- app initialization
 index.html                          <-- START HERE
 vite.config.js                      <-- build configuration
 README.md
@@ -46,7 +45,7 @@ README.md
 
 ### Mounting Strategy
 
-This template uses a static object registry to mount global **components** which in-turn can mount other nested components via `components` export option.
+This template automaticly registers and mounts riot components. These global **components** can in-turn can mount other nested components via `components` export option.
 
 #### Example
 
@@ -69,16 +68,16 @@ This template uses a static object registry to mount global **components** which
 </my-page>
 ```
 
-> SEE: `/src/index.js` & `/src/js/registry.js` for more information
+> SEE: `/src/app.js` for more information
 
 
 ### Tests
 
-In a folder-per-component setup, you can place your `*.spec.js` files right next to your web components for isolated testing, but this template is a...
+In a **folder-per-component** setup, you can place your `*.spec.js` files right next to your web components for isolated testing, but this template is a...
 
 *bring your own testing solution*
 
-> CHAI/MOCHA EXAMPLE: `src/components/hello-riot/hello-riot.spec.js` (unwired)
+> EXAMPLE: https://github.com/riot/examples/tree/gh-pages/timer
 
 
 ## NPM Scripts
