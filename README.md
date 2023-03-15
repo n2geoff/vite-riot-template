@@ -24,6 +24,7 @@ When you use this template, you should update the following with your informatio
 - [ ] Change the favicon in `public`
 - [ ] Clean up the README
 
+
 ### Project Structure
 
 ```
@@ -33,9 +34,7 @@ src/                                <-- your source code
     js/                             <-- processed javascript files
     public/                         <-- unprocessed static `/` assets
     components/                     <-- riots components
-        hello-riot/
-            hello-riot.riot         <-- riot component
-            hello-riot.spec.js      <-- component tests
+        hello-riot.riot             <-- example riot component
     app.js                          <-- app initialization
 index.html                          <-- START HERE
 vite.config.js                      <-- build configuration
@@ -43,43 +42,20 @@ README.md
 ...                                 <-- misc project meta files
 ```
 
-### Mounting Strategy
+### Automatic Tag Registeration
 
-This template automaticly registers and mounts riot components. These global **components** can in-turn can mount other nested components via `components` export option.
-
-#### Example
-
-```
-// my-page.riot
-<my-page>
-    <div>
-        <example-component></example-component>
-    </div>
-
-    <script>
-        import Example from './example-component/example-component.riot';
-
-        export default {
-            components: {
-                Example
-            }
-        }
-    </script>
-</my-page>
-```
+Any `.riot` components under the `src/` directory are automatically registered, like `components/`. You can add, rename, restructure the folders as you like.
 
 > SEE: `/src/app.js` for more information
 
 
 ## NPM Scripts
 
-- `npm run dev` - Starts the development server at port 3000
+- `npm run dev` - Starts the development server at port 5173
 - `npm run build` - Builds the application in a dist folder
-- `npm run preview` - Serves the build files (dist folder) locally at port 5000
+- `npm run preview` - Serves the build files (dist folder) locally at port 5173
 
-> Note that if after this last command you do not see anything, you can use instead this other command:
-
-`npm run preview --host` - You should then be able to see your files locally at port 5000
+> See [ViteJS Documentation](https://vitejs.dev/) for more information
 
 
 ## License
