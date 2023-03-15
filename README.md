@@ -53,7 +53,7 @@ Any `.riot` components under the `src/` directory are automatically registered, 
 
 - `npm run dev` - Starts the development server at port 5173
 - `npm run build` - Builds the application in a dist folder
-- `npm run preview` - Serves the build files (dist folder) locally at port 5173
+- `npm run preview` - Serves the build files (dist folder) locally at port 4173
 
 > See [ViteJS Documentation](https://vitejs.dev/) for more information
 
