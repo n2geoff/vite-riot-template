@@ -35,19 +35,12 @@ src/                                <-- your source code
     public/                         <-- unprocessed static `/` assets
     components/                     <-- riots components
         hello-riot.riot             <-- example riot component
-    app.js                          <-- app initialization
+    main.js                         <-- main app initialization
 index.html                          <-- START HERE
 vite.config.js                      <-- build configuration
 README.md
 ...                                 <-- misc project meta files
 ```
-
-### Automatic Tag Registeration
-
-Any `.riot` components under the `src/` directory are automatically registered, like `components/`. You can add, rename, restructure the folders as you like.
-
-> SEE: `/src/app.js` for more information
-
 
 ## NPM Scripts
 
