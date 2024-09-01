@@ -2,6 +2,13 @@
 
 Use [Vite](https://vitejs.dev/) Starter Template to scaffold a new [Riot](https://riot.js.org/) project.
 
+## Features
+
+Minimal SPA setup using
+
+- Riot 9.x
+- Route 9.x
+- Vite 5.x
 
 ## Getting Started
 
@@ -33,8 +40,9 @@ src/                                <-- your source code
     css/                            <-- processed css files
     js/                             <-- processed javascript files
     public/                         <-- unprocessed static `/` assets
-    components/                     <-- riots components
-        hello-riot.riot             <-- example riot component
+    components/                     <-- riots components examples
+        riot-welcome.riot
+        riot-about.riot
     main.js                         <-- main app initialization
 index.html                          <-- START HERE
 vite.config.js                      <-- build configuration
