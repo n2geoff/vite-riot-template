@@ -1,6 +1,6 @@
 {
   "name": "vite-riot-template",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,6 +11,7 @@
     "node": ">18.0.0 <21.0.0"
   },
   "dependencies": {
+    "@riotjs/route": "^9.2.0",
     "riot": "^9.3.0"
   },
   "devDependencies": {

@@ -1,14 +1,31 @@
 <app>
-    <div>
-        <hello-riot version="v9.x"></hello-riot>
-    </div>
+    <section class="splash">
+        <router>
+            <div class="flex">
+                <a href="/">Home</a>
+                <img src="/assets/images/square.svg" />
+                <a href="/about">About</a>
+            </div>
+        </router>
+        <route each="{page in state.pages}" path="{page.path}">
+            <div is="{page.component}" {...page.props}></div>
+        </route>
+    </section>
 
     <script>
-        import helloRiot from "./hello-riot.riot";
+        import RiotWelcome from "./riot-welcome.riot";
+        import RiotAbout from "./riot-about.riot";
 
         export default {
             components: {
-                helloRiot
+                RiotWelcome,
+                RiotAbout
+            },
+            state: {
+                pages: [
+                    {path: "/", component: "riot-welcome", props: {version: "9.x"}},
+                    {path: "/about", component: "riot-about"},
+                ]
             }
         }
     </script>

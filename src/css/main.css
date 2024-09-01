@@ -10,6 +10,14 @@ h1, h2, h3 {
   margin: 1rem;
 }
 
+h3 {
+  color: #ED1846;
+}
+
+p {
+  margin: 1rem;
+}
+
 a {
   color: #ED1
 }
@@ -25,7 +33,7 @@ code {
 }
 
 .splash {
-    font-size: larger;
+    font-size: 1.6rem;
     text-align: center;
     margin: 4vh auto;
     width: 620px;

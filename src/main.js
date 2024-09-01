@@ -1,4 +1,5 @@
 import * as riot from "riot";
+import {Route, Router} from "@riotjs/route";
 import app from "./components/app.riot";
 
 const main = {
@@ -15,13 +16,19 @@ const main = {
     plugins() {
         riot.install((component) => {
             // add your own features here
-            component.version = "3.0.0";
+            component.version = {
+                riot: "9.x.x",
+                vite: "5.x.x",
+                app: "3.1.0"
+            };
         });
     },
 
     mount() {
         // register core app component
         riot.register("app", app);
+        riot.register("router", Router);
+        riot.register("route", Route);
 
         // mount main app
         riot.mount("app");
