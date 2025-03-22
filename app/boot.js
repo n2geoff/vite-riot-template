@@ -2,9 +2,9 @@ import * as riot from "riot";
 import {Route, Router} from "@riotjs/route";
 import app from "./components/app.riot";
 
-const main = {
+const boot = {
     // start-up actions here
-    init() {
+    start() {
         // install plugins
         this.plugins();
 
@@ -18,8 +18,8 @@ const main = {
             // add your own features here
             component.version = {
                 riot: "9.x.x",
-                vite: "5.x.x",
-                app: "3.1.0"
+                vite: "6.x.x",
+                app: "4.0.0"
             };
         });
     },
@@ -35,4 +35,4 @@ const main = {
     }
 }
 
-main.init();
+boot.start();
