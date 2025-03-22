@@ -8,7 +8,7 @@ Minimal SPA setup using
 
 - Riot 9.x
 - Route 9.x
-- Vite 5.x
+- Vite 6.x
 
 ## Getting Started
 
@@ -36,14 +36,16 @@ When you use this template, you should update the following with your informatio
 
 ```
 dist/                               <-- `npm run build` app
-src/                                <-- your source code
+app/                                <-- your app code
     css/                            <-- processed css files
     js/                             <-- processed javascript files
     public/                         <-- unprocessed static `/` assets
-    components/                     <-- riots components examples
+    components/                     <-- riots components
+        app.riot
+    pages/                          <-- semantic page/components
         riot-welcome.riot
         riot-about.riot
-    main.js                         <-- main app initialization
+    boot.js                         <-- app bootstrap
 index.html                          <-- START HERE
 vite.config.js                      <-- build configuration
 README.md
