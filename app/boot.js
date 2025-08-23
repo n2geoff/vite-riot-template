@@ -18,8 +18,8 @@ const boot = {
             // add your own features here
             component.version = {
                 riot: "9.x.x",
-                vite: "6.x.x",
-                app: "4.0.0"
+                vite: "7.x.x",
+                app: "4.1.0"
             };
         });
     },

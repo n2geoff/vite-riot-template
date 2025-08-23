@@ -8,7 +8,7 @@ Minimal SPA setup using
 
 - Riot 9.x
 - Route 9.x
-- Vite 6.x
+- Vite 7.x
 
 ## Getting Started
 
