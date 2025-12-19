@@ -6,8 +6,9 @@ Use [Vite](https://vitejs.dev/) Starter Template to scaffold a new [Riot](https:
 
 Minimal SPA setup using
 
-- Riot 9.x
-- Route 9.x
+- Node 22+
+- Riot 10.x
+- Route 10.x
 - Vite 7.x
 
 ## Getting Started
@@ -40,11 +41,12 @@ app/                                <-- your app code
     css/                            <-- processed css files
     js/                             <-- processed javascript files
     public/                         <-- unprocessed static `/` assets
-    components/                     <-- riots components
-        app.riot
-    pages/                          <-- semantic page/components
-        riot-welcome.riot
-        riot-about.riot
+    views/
+        components/                 <-- riots components
+            app.riot
+        pages/                      <-- semantic page/components
+            riot-welcome.riot
+            riot-about.riot
     boot.js                         <-- app bootstrap
 index.html                          <-- START HERE
 vite.config.js                      <-- build configuration

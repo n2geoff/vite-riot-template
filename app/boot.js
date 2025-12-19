@@ -1,6 +1,6 @@
 import * as riot from "riot";
 import {Route, Router} from "@riotjs/route";
-import app from "./components/app.riot";
+import app from "./views/pages/app.riot";
 
 const boot = {
     // start-up actions here
@@ -17,9 +17,9 @@ const boot = {
         riot.install((component) => {
             // add your own features here
             component.version = {
-                riot: "9.x.x",
-                vite: "7.x.x",
-                app: "4.1.0"
+                riot: "10.x",
+                vite: "7.x.",
+                app: "5.0.0"
             };
         });
     },
